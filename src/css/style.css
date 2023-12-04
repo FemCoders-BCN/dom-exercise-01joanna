@@ -133,12 +133,7 @@
   .old-price {
     font-weight: 100;
   }
-  
-  /* botones */
-  button {
-    /* cursor: pointer; */
-  }
-  
+
   #shopping-button {
     width: 1em;
     color: white;
