@@ -26,29 +26,35 @@
   .product-title {
     font-size: 2rem;
     font-weight: 700;
+    margin: 0;
   }
   
   .product-card {
-    background: #fff;
+    /* background: #fff; */
     display: grid;
     /* align-items: center; */
     grid-template-rows: 55% 45%;
     height: 80%;
     width: 28%;
-    box-shadow: 10px 10px 25px 0px #3c3c3c;
+    /* box-shadow: 10px 10px 25px 0px #3c3c3c; */
   }
+
+  ul, li {
+    list-style: none;
+    margin: 0; 
+    padding: 0;
+    }
   
   .product-image {
     /* border: 2px solid black; */
-    background-image: url("../../public/img/blackcar.jpg");
-    background-position: center;
+    /* background-image: url("../../public/img/blackcar.jpg"); */
+    /* background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    padding: 40px 10px;
-    width: 28rem;
-    height: 66%;
+    background-size: cover; */
+    /* padding: 40px 10px; */
+  width: 30rem;
+  /* height: 66%; */
   }
-  
   .product-description {
     background-color: #62c256;
     color: #fff;
@@ -56,6 +62,11 @@
     margin-top: -67px;
   }
   
+  #icon {
+    width: 1em;
+    color: black;
+  }
+
   .product-details {
     display: flex;
     flex-direction: column;
@@ -63,22 +74,26 @@
   }
   
   .product-image img {
-    width: 28rem;
+    width: 100%;
+    /* border: 1px solid black; */
   }
   
-  .stars {
+ #star {
     color: yellow;
     font-size: 1em;
   }
   
   /* colores */
+  p, h2 {
+    margin: 0;
+  }
   .colors-price {
-    display: flex;
+    display: block;
     align-items: center;
     width: 70%;
     justify-content: space-between;
-    margin-top: -15px;
   }
+
   
   .colors {
     display: flex;
@@ -118,17 +133,20 @@
   .old-price {
     font-weight: 100;
   }
-  
-  /* botones */
-  button {
-    cursor: pointer;
+
+  #shopping-button {
+    width: 1em;
+    color: white;
   }
-  
   #button {
     background-color: #000;
     padding: 10px 25px;
     border: none;
     border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    width: 10.4rem;
+    margin-top: -1rem;
   }
   
   button white-button {
@@ -141,7 +159,7 @@
   }
   
   .feedback {
-    display: none;
+    display: block;
     padding: 10px 25px;
     border: none;
     border-radius: 5px;
